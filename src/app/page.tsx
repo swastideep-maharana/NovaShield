@@ -10,7 +10,7 @@ import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center w-full overflow-hidden bg-transparent selection:bg-primary/30 relative">
+    <main className="flex min-h-screen flex-col items-center w-full bg-transparent selection:bg-primary/30 relative">
       
       {/* === FIXED COSMIC BACKGROUND START === */}
       <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
