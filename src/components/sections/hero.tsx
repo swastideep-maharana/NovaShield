@@ -30,11 +30,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-white will-change-transform"
+          className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-white will-change-transform max-w-4xl"
         >
-          Securing the<br />
+          One-click protection for<br />
           <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient">
-            Modern Web.
+            Modern SaaS & Digital Assets
           </span>
         </motion.h1>
 
@@ -43,10 +43,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-12 leading-relaxed will-change-transform"
+          className="text-lg md:text-xl text-zinc-400 max-w-3xl mb-12 leading-relaxed font-light will-change-transform"
         >
-          Automated defense infrastructure for high-growth companies. 
-          Prevent attacks before they happen with <span className="text-zinc-100 font-medium">zero latency</span>.
+          Secure, monitor, and manage your digital infrastructure with a single unified platform built for <span className="text-zinc-100 font-medium">startups and growing teams</span>.
         </motion.p>
 
         {/* CTA Buttons - Premium Polish */}
@@ -54,7 +53,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col items-center gap-8"
+          className="flex flex-col items-center gap-12"
         >
           <div className="flex flex-col sm:flex-row items-center gap-6 relative">
              {/* Hand-drawn Arrow Annotation */}
@@ -71,37 +70,45 @@ export function Hero() {
              </div>
 
              {/* Primary Button: Shimmering Violet */}
-             <button className="relative group px-8 py-4 rounded-full bg-primary text-white font-bold overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(124,58,237,0.5)]">
+             <button className="relative group px-10 py-5 rounded-full bg-primary text-white font-bold overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(124,58,237,0.5)]">
                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
-                 <div className="relative flex items-center gap-2">
-                    Start Free Trial
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                 <div className="relative flex items-center gap-2 text-lg">
+                    Get Early Access
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                  </div>
              </button>
 
              {/* Secondary Button: Glass with Border Shine */}
-             <button className="group relative px-8 py-4 rounded-full text-zinc-300 font-semibold bg-white/5 border border-white/10 overflow-hidden transition-colors hover:text-white hover:border-white/20">
+             <button className="group relative px-10 py-5 rounded-full text-zinc-300 font-semibold bg-white/5 border border-white/10 overflow-hidden transition-colors hover:text-white hover:border-white/20">
                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                 <span className="relative flex items-center gap-2">
-                    Contact Sales
+                 <span className="relative flex items-center gap-2 text-lg">
+                    Request Demo
                  </span>
              </button>
           </div>
 
-          {/* Social Proof Avatars */}
-          <div className="flex items-center gap-3">
-              <div className="flex -space-x-3">
-                  {[1,2,3,4].map((i) => (
-                      <div key={i} className="w-8 h-8 rounded-full border border-[#030014] bg-zinc-800 overflow-hidden">
-                          <img src={`https://i.pravatar.cc/100?u=users${i}`} alt="user" className="w-full h-full object-cover opacity-80" />
-                      </div>
-                  ))}
-                  <div className="w-8 h-8 rounded-full border border-[#030014] bg-zinc-800 flex items-center justify-center text-[10px] text-white font-medium">
-                      +2k
+          {/* New Trust Signals Logo Strip */}
+          <div className="w-full flex flex-col items-center gap-8">
+              <p className="text-[10px] md:text-xs text-zinc-500 uppercase tracking-[0.2em] font-bold">
+                  Trusted by early-stage startups & indie founders
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700">
+                  <div className="flex items-center gap-2">
+                       <Shield className="w-5 h-5 text-zinc-400" />
+                       <span className="text-lg font-bold tracking-tight text-zinc-300">NovaTech</span>
                   </div>
-              </div>
-              <div className="text-sm text-zinc-500">
-                  Trusted by <span className="text-zinc-300 font-medium">engineers</span> worldwide
+                  <div className="flex items-center gap-2">
+                       <Activity className="w-5 h-5 text-zinc-400" />
+                       <span className="text-lg font-bold tracking-tight text-zinc-300">AlphaLabs</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                       <div className="w-5 h-5 rounded-sm bg-zinc-400" />
+                       <span className="text-lg font-bold tracking-tight text-zinc-300">Cloudify</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                       <div className="w-2 h-5 rounded-full bg-zinc-400" />
+                       <span className="text-lg font-bold tracking-tight text-zinc-300">SecureX</span>
+                  </div>
               </div>
           </div>
         </motion.div>

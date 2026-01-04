@@ -55,7 +55,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link href="#pricing" className="px-4 py-2 rounded-full bg-white text-black text-xs font-bold hover:bg-zinc-200 transition-colors">
-            Get Started
+            Get Early Access
           </Link>
         </div>
 
@@ -89,7 +89,7 @@ export function Navbar() {
                 </Link>
               ))}
                <Link href="#pricing" onClick={() => setMobileMenuOpen(false)} className="w-full mt-4 px-5 py-3 rounded-full bg-blue-500 text-white font-semibold text-center">
-                Get Started
+                Get Early Access
               </Link>
             </div>
           </motion.div>

@@ -38,7 +38,7 @@ export function CTA() {
            transition={{ duration: 0.5, delay: 0.1 }}
            className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto"
         >
-            Start your 14-day free trial today. No credit card required. cancel anytime.
+            Secure your digital infrastructure in minutes. Built for modern teams that prioritize speed and security.
         </motion.p>
         
         <motion.div
@@ -47,11 +47,11 @@ export function CTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
         >
-            <button className="relative group px-10 py-5 rounded-full bg-white text-black font-bold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_-10px_rgba(255,255,255,0.5)]">
+            <button className="relative group px-12 py-6 rounded-full bg-white text-black font-bold text-xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_-10px_rgba(255,255,255,0.5)]">
                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-zinc-200 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
                  <span className="relative flex items-center gap-3">
-                    Get Started Now
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    Launch Securely
+                    <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                  </span>
             </button>
         </motion.div>

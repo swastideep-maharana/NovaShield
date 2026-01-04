@@ -121,7 +121,7 @@ export function Pricing() {
                       : "bg-white/10 text-white hover:bg-white/20 border border-white/5"
                 )}
               >
-                {plan.name === "Enterprise" ? "Contact Sales" : "Get Started"}
+                {plan.name === "Enterprise" ? "Request Demo" : "Get Early Access"}
               </button>
             </motion.div>
           ))}

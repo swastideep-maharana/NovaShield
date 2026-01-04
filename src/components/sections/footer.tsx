@@ -16,7 +16,7 @@ export function Footer() {
               <span className="text-xl font-bold text-white">NovaShield</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Next-generation automated security for the modern web. Protect your assets with the power of AI.
+              One-click protection for modern SaaS & digital assets. Built for startups and growing teams.
             </p>
             <div className="flex gap-4">
               {[Twitter, Github, Linkedin].map((Icon, i) => (
