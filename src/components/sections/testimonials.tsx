@@ -32,11 +32,7 @@ const companies = [
 export function Testimonials() {
   return (
     <section id="testimonials" className="py-32 px-6 bg-transparent relative overflow-hidden">
-        {/* Abstract background */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
-            <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-blue-900/10 to-transparent" />
-            <div className="absolute left-0 bottom-0 w-1/3 h-full bg-gradient-to-r from-purple-900/10 to-transparent" />
-        </div>
+
 
       <div className="container mx-auto max-w-7xl">
         

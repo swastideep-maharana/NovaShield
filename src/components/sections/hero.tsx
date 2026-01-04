@@ -54,24 +54,56 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center gap-6"
+          className="flex flex-col items-center gap-8"
         >
-          {/* Primary Button: Shimmering Violet */}
-          <button className="relative group px-8 py-4 rounded-full bg-primary text-white font-bold overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(124,58,237,0.5)]">
-             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
-             <div className="relative flex items-center gap-2">
-                Start Free Trial
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <div className="flex flex-col sm:flex-row items-center gap-6 relative">
+             {/* Hand-drawn Arrow Annotation */}
+             <div className="absolute -left-[140px] top-1/2 -translate-y-1/2 hidden md:block">
+                  <div className="relative">
+                      <span className="absolute -top-6 left-0 -rotate-12 text-sm text-zinc-400 font-handwriting whitespace-nowrap opacity-80">
+                          Deploy in seconds
+                      </span>
+                      <svg width="100" height="40" viewBox="0 0 100 40" fill="none" className="text-zinc-600 opacity-60">
+                           <path d="M10,20 Q50,5 90,20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                           <path d="M90,20 L80,15 M90,20 L82,25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                      </svg>
+                  </div>
              </div>
-          </button>
 
-          {/* Secondary Button: Glass with Border Shine */}
-          <button className="group relative px-8 py-4 rounded-full text-zinc-300 font-semibold bg-white/5 border border-white/10 overflow-hidden transition-colors hover:text-white hover:border-white/20">
-             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-             <span className="relative flex items-center gap-2">
-                Contact Sales
-             </span>
-          </button>
+             {/* Primary Button: Shimmering Violet */}
+             <button className="relative group px-8 py-4 rounded-full bg-primary text-white font-bold overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(124,58,237,0.5)]">
+                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
+                 <div className="relative flex items-center gap-2">
+                    Start Free Trial
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                 </div>
+             </button>
+
+             {/* Secondary Button: Glass with Border Shine */}
+             <button className="group relative px-8 py-4 rounded-full text-zinc-300 font-semibold bg-white/5 border border-white/10 overflow-hidden transition-colors hover:text-white hover:border-white/20">
+                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                 <span className="relative flex items-center gap-2">
+                    Contact Sales
+                 </span>
+             </button>
+          </div>
+
+          {/* Social Proof Avatars */}
+          <div className="flex items-center gap-3">
+              <div className="flex -space-x-3">
+                  {[1,2,3,4].map((i) => (
+                      <div key={i} className="w-8 h-8 rounded-full border border-[#030014] bg-zinc-800 overflow-hidden">
+                          <img src={`https://i.pravatar.cc/100?u=users${i}`} alt="user" className="w-full h-full object-cover opacity-80" />
+                      </div>
+                  ))}
+                  <div className="w-8 h-8 rounded-full border border-[#030014] bg-zinc-800 flex items-center justify-center text-[10px] text-white font-medium">
+                      +2k
+                  </div>
+              </div>
+              <div className="text-sm text-zinc-500">
+                  Trusted by <span className="text-zinc-300 font-medium">engineers</span> worldwide
+              </div>
+          </div>
         </motion.div>
 
         {/* Dashboard Visual */}

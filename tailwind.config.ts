@@ -77,7 +77,10 @@ const config: Config = {
         gradient: "gradient 8s linear infinite",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-heading)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+        handwriting: ["cursive"],
       }
     },
   },

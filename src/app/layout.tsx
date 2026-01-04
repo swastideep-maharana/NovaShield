@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/smooth-scroll";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-heading" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
   title: "NovaShield | Next-Gen Cyber Defense",
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground overflow-x-hidden selection:bg-primary/20 selection:text-primary`}>
+      <body className={`${grotesk.variable} ${jakarta.variable} font-body antialiased bg-background text-foreground overflow-x-hidden selection:bg-primary/20 selection:text-primary`}>
         <SmoothScroll>
           {children}
         </SmoothScroll>
